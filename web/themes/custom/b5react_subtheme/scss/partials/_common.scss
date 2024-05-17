@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Poppins"),
+      url("../../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Poppins"),
+        url("../../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Poppins"),
+      url("../../fonts/poppins/Poppins-Light.ttf") format("truetype");
+}
+* {
+    font-family: "Poppins-Regular", sans-serif;
+    box-sizing: border-box
+}
+body {
+    background: $white;
+    color: $black;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    position: relative;
+    overflow-x: hidden;
+    cursor: auto;
+}
+h1 {
+    font-family: "Poppins-Bold";
+    font-size: 76px;
+    line-height: 86px;
+    letter-spacing: 0;
+    @media screen and (max-width: 768px){
+        font-size: 31px;
+        line-height: 41px;
+    }
+}
+h2 {
+    font-family: "Poppins-Bold";
+    font-size: 29px;
+    line-height: 39px;
+    letter-spacing: 0;
+    @media screen and (max-width: 768px){
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+p {
+    font-family: "Poppins-Light";
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.nav-link {
+    font-family: "Poppins-Bold";
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+a {
+    font-family: "Poppins-Light";
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (max-width: 1400px){
+        max-width: 1140px;
+    }
+    @media screen and (max-width: 1200px){
+        max-width: 960px;
+    }
+    @media screen and (max-width: 992px){
+        max-width: 720px;
+    }
+    @media screen and (max-width: 768px){
+        max-width: 540px;
+    }
+    @media screen and (max-width: 576px){
+        max-width: 100%;
+    }
+}
+button {
+    color: $black;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    &.active {
+        background-color: $black;
+        color: $white;
+    }
+    &:hover {
+        border: 1px solid $black;
+        background-color: $white;
+        color: $black;
+    }
+    &.design-2 {
+        background-color: $white;
+        color: $black;
+    }
+}
+.contact-link {
+    font-size: 18px;
+    padding-right: 20px;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background-image: url(../../assets/svg/linkedin.svg);
+    }
+}

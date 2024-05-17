@@ -1,0 +1,72 @@
+.view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .views-row {
+        width: 25%;
+        @media screen and (max-width: 992px){
+            width: 33%;
+        }
+        @media screen and (max-width: 768px){
+            width: 50%;
+        }
+        @media screen and (max-width: 520px){
+            width: 100%;
+        }
+        img {
+            width: 276px;
+            height: 320px;
+            padding-bottom: 10px;
+        }
+        .views-field-field-product-name {
+            .field-content {
+                font-family: $Epilogue;
+                font-weight: 700;
+                font-size: 24px;
+                color: #171A1F;
+                @media screen and (max-width: 768px){
+                    font-size: 20px;
+                }
+            }
+        }
+        .views-field-field-product-price {
+            .field-content {
+                font-family: $Epilogue;
+                font-weight: 400;
+                padding-left: 10px;
+                font-size: 16px;
+                color: #171A1F;
+                @media screen and (max-width: 768px){
+                    font-size: 14px;
+                }
+                &:before {
+                    content: "$";
+                }
+            }
+        }
+        button {
+            font-weight: 400;
+            font-size: 14px;
+            background-color: #ED7D2D;
+            color: $white;
+        }
+    }
+}
+.popup {
+    display: none;
+    .view-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 80px;
+        height: 93px;
+    }
+    .headings {
+        font-size: 14px;
+        font-weight: 600;
+        color: #565E6C;
+    }
+    &.show {
+        display: block;
+    }
+}

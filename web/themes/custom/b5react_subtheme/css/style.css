@@ -1,0 +1,27 @@
+.view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.view-content .views-row {
+  width: 25%;
+}
+@media screen and (max-width: 992px) {
+  .view-content .views-row {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .view-content .views-row {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .view-content .views-row {
+    width: 100%;
+  }
+}
+.view-content .views-row img {
+  width: 276px;
+  height: 320px;
+  padding-bottom: 10px;
+}
